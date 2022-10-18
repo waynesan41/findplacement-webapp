@@ -9,6 +9,7 @@ header("connection:keep-alive");
 session_start();
 if (isset($_SESSION["userLogin"])) {
   // echo "USER is Login\n";
+  // echo json_encode(1);
 } else {
   echo json_encode(0);
   die();

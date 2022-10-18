@@ -90,7 +90,8 @@ if (checkKeys()) {
     $objID = $objectIns->newObjID;
     for ($i = 1; $i <= count($_FILES); $i++) {
       $imgObj = new Image($_FILES["img" . $i]);
-      $imgObj->uploadImage($libraryID, $objID, $i, 2);
+      $imgObj->uploadImageLinux($libraryID, $objID, $i, 2);
+      
     }
     echo json_encode("ADD");
   }

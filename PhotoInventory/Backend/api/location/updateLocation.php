@@ -98,7 +98,7 @@ if (checkKeys()) {
     if (isset($_POST["photo"])) {
       for ($i = 1; $i <= count($_FILES); $i++) {
         $imgObj = new Image($_FILES["img" . $i]);
-        $imgObj->uploadImage($mainID, $locationID, $i, 1);
+        $imgObj->uploadImageLinux($mainID, $locationID, $i, 1);
       }
       $imgObj = new Image($mainID);
       $imgObj->deleteImage($mainID, $locationID, count($_FILES) + 1, 1);

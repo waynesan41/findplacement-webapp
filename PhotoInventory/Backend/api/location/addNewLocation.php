@@ -88,7 +88,7 @@ if (checkKeys()) {
     $locID = $locationObj->newLocID;
     for ($i = 1; $i <= count($_FILES); $i++) {
       $imgObj = new Image($_FILES["img" . $i]);
-      $imgObj->uploadImage($mainID, $locID, $i, 1);
+      $imgObj->uploadImageLinux($mainID, $locID, $i, 1);
     }
   }
 } else {
