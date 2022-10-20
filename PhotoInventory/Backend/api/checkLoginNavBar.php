@@ -1,7 +1,8 @@
 
 <?php
 header("Access-Control-Allow-Headers: *");
-header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Origin: http://10.1.10.91:3000");
+// header("Access-Control-Allow-Origin: http://localhost:3000");
 header("Content-type:application/json");
 header("Access-Control-Allow-Credentials: true");
 header("connection:keep-alive");

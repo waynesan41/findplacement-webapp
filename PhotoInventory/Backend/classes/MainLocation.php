@@ -148,7 +148,7 @@ class MainLocation
   //****** CHECK Name of a Main Location By Owner */
   public function checkMainName($name)
   {
-    $query = "SELECT 1 FROM Mainlocation WHERE OwnerID = :id AND Name = :name";
+    $query = "SELECT 1 FROM MainLocation WHERE OwnerID = :id AND Name = :name";
     $stmt = $this->conn->prepare($query);
     $stmt->bindParam(":id", $this->id);
     $stmt->bindParam(":name", $name);

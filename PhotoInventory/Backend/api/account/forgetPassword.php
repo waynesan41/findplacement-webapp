@@ -25,9 +25,9 @@ if (checkKeys()) {
       $tokenKey = bin2hex(random_bytes(64));
       if ($userObj->createToken($tokenKey)) {
         //Send Email Here
-        $apiURL = "http://localhost:3000";
+        // $apiURL = "http://localhost:3000";
         $mailerObj = new Mailer();
-        if ($mailerObj->sendEmailLink($tokenKey, $apiURL, $email)) {
+        if ($mailerObj->sendEmailLink($tokenKey, $email)) {
           echo json_encode(1);
         } else {
           echo json_encode(0);
