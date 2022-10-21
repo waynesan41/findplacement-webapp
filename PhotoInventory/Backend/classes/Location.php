@@ -219,7 +219,7 @@ class Location
       SELECT c.LocationID, c.TopLocationID, c.Name
       FROM Location c
       INNER JOIN name_tree p on p.TopLocationID = c.LocationID AND MainLocationID = :mainID)
-      SELECT * FROM name_tree WHERE TopLocationID = :currLocID GROUP BY TopLocationID";
+      SELECT * FROM name_tree WHERE TopLocationID = :currLocID";
     $stmt = $this->conn->prepare($query);
     $stmt->bindParam(":mainID", $mainID);
     $stmt->bindParam(":newTopID", $newTopID);
