@@ -15,9 +15,9 @@ class Mailer
   public function __construct()
   {
   }
-  public function sendEmailLink($tokenKey, $email)
+  public function sendEmailLink($tokenKey, $apiURL, $email)
   {
-    $apiURL = "https://findplacement.org";
+    // $apiURL = "https://findplacement.org";
     $mail = new PHPMailer(true);
     try {
       //Server settings

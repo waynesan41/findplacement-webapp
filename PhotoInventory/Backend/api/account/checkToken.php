@@ -1,10 +1,12 @@
 <?php
 header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: POST");
-
+session_start();
+session_destroy();
 require_once "../checkNotLogin.php";
 require_once "../../classes/User.php";
 require_once "../../classes/Filter.php";
+
 if (checkKeys()) {
   $userObj = new User();
   $filter = new Filter();

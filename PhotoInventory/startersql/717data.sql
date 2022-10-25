@@ -35,7 +35,7 @@ INSERT  IGNORE INTO `Location` VALUES (1,1001,NULL,0,0,'Wayne desk',1,NULL),(2,1
 --
 
 /*!40000 ALTER TABLE `Mainlocation` DISABLE KEYS */;
-INSERT  IGNORE INTO `Mainlocation` VALUES (1,1000,'Default Main Location',0,0,0),(1000,1000,'Dummy Main Location',0,0,0),(1001,1001,'717 Office 1',32,0,0),(1002,1000,'Default Main Location',0,0,0),(1004,1002,'Default Main Location',0,0,0),(1006,1003,'Main Location',0,0,0),(1007,1001,'test',0,0,0),(1008,1002,'test333',0,0,0);
+INSERT  IGNORE INTO `Mainlocation` VALUES (1,1000,'Default Main Location',0,0,0),(1000,1000,'Dummy Main Location',0,0,0),(1001,1001,'717 Office 1',0,0,0),(1002,1000,'Default Main Location',0,0,0),(1004,1002,'Default Main Location',0,0,0),(1006,1003,'Main Location',0,0,0),(1007,1001,'test',0,0,0),(1008,1002,'test333',0,0,0);
 /*!40000 ALTER TABLE `Mainlocation` ENABLE KEYS */;
 
 --
@@ -43,7 +43,7 @@ INSERT  IGNORE INTO `Mainlocation` VALUES (1,1000,'Default Main Location',0,0,0)
 --
 
 /*!40000 ALTER TABLE `Objectlibrary` DISABLE KEYS */;
-INSERT  IGNORE INTO `Objectlibrary` VALUES (1,1000,'Default Library',0),(1000,1000,'Dummy Library',0),(1001,1001,'717 Inventory 1',147),(1002,1000,'Default Library',0),(1004,1002,'Default Library',0),(1005,1003,'Default Library',0),(1006,1001,'test',0),(1007,1002,'tes111',0);
+INSERT  IGNORE INTO `Objectlibrary` VALUES (1,1000,'Default Library',0),(1000,1000,'Dummy Library',0),(1001,1001,'717 Inventory 1',0),(1002,1000,'Default Library',0),(1004,1002,'Default Library',0),(1005,1003,'Default Library',0),(1006,1001,'test',0),(1007,1002,'tes111',0);
 /*!40000 ALTER TABLE `Objectlibrary` ENABLE KEYS */;
 
 --

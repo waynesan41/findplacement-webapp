@@ -10,6 +10,7 @@ require_once "../../classes/Mail/Mailer.php";
 // SLEEP(1);
 if (checkKeys()) {
   $email = $_POST["email"];
+  $apiURL = $_POST["apiURL"];
   $userObj = new User();
   $filter = new Filter();
 
@@ -27,7 +28,8 @@ if (checkKeys()) {
         //Send Email Here
         // $apiURL = "http://localhost:3000";
         $mailerObj = new Mailer();
-        if ($mailerObj->sendEmailLink($tokenKey, $email)) {
+
+        if ($mailerObj->sendEmailLink($tokenKey, $apiURL, $email)) {
           echo json_encode(1);
         } else {
           echo json_encode(0);
@@ -49,7 +51,7 @@ function checkKeys()
   if (empty($_POST)) {
     return false;
   }
-  $keyAllow = ["email"];
+  $keyAllow = ["email", "apiURL"];
   foreach (array_keys($_POST) as $key) {
     if (!in_array($key, $keyAllow)) {
       return false;
