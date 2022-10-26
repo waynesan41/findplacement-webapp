@@ -43,7 +43,7 @@ INSERT  IGNORE INTO `MainLocation` VALUES (1,300,'Default Main Location',0,0,0),
 --
 
 /*!40000 ALTER TABLE `ObjectLibrary` DISABLE KEYS */;
-INSERT  IGNORE INTO `ObjectLibrary` VALUES (1,300,'Default Library',0),(2,301,'Default Library',0),(300,300,'Dummy Library',0),(301,302,'Home Inventory',51),(302,303,'Default Library',0),(303,304,'Default Library',0),(304,305,'Default Library',0);
+INSERT  IGNORE INTO `ObjectLibrary` VALUES (1,300,'Default Library',0),(2,301,'Default Library',0),(300,300,'Dummy Library',0),(301,302,'Home Inventory',0),(302,303,'Default Library',0),(303,304,'Default Library',0),(304,305,'Default Library',0);
 /*!40000 ALTER TABLE `ObjectLibrary` ENABLE KEYS */;
 
 --
@@ -112,7 +112,7 @@ INSERT  IGNORE INTO `User` VALUES (300,'Dummy User','dummyUser1','Qwer`123','dum
 --
 
 /*!40000 ALTER TABLE `UserTracker` DISABLE KEYS */;
-INSERT  IGNORE INTO `UserTracker` VALUES (300,1,1,0,0),(301,0,0,0,0),(302,0,0,0,0),(303,0,0,0,0),(304,0,0,0,0),(305,0,0,0,0);
+INSERT  IGNORE INTO `UserTracker` VALUES (300,1,1,0,0,0),(301,0,0,0,0,0),(302,0,0,0,0,0),(303,0,0,0,0,0),(304,0,0,0,0,0),(305,0,0,0,0,0);
 /*!40000 ALTER TABLE `UserTracker` ENABLE KEYS */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
