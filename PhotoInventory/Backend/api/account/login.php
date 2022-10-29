@@ -15,9 +15,28 @@ if (checkKeys()) {
   if ($userObj->login($login, $pass)) {
     // echo 'User and Password Correct! ID: ' . $userObj->id;
     $_SESSION["userLogin"] = $userObj->getUserID();
-    if($remenber == 1){
+    if ($remenber == 1) {
       $params = session_get_cookie_params();
-      setcookie(session_name(), $_COOKIE[session_name()], time() + 60*60*24*30, $params["path"], $params["domain"], $params["secure"], $params["httponly"]);
+      setcookie(
+        session_name(),
+        $_COOKIE[session_name()],
+        time() + 60 * 60 * 24 * 30,
+        $params["path"],
+        $params["domain"],
+        $params["secure"],
+        $params["httponly"]
+      );
+    } else {
+      $params = session_get_cookie_params();
+      setcookie(
+        session_name(),
+        $_COOKIE[session_name()],
+        time() + 60 * 30,
+        $params["path"],
+        $params["domain"],
+        $params["secure"],
+        $params["httponly"]
+      );
     }
     echo json_encode(1);
   } else {

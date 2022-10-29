@@ -30,6 +30,10 @@ if (checkKeys()) {
   $topID = $_POST["topID"];
   $locationObj = new location($_SESSION["userLogin"]);
 
+  if ($topID == $locationID) {
+    echo json_encode("FAIL");
+    return 0;
+  }
   if ($filter->checkInt($_POST["mainID"])) {
     $mainID = $_POST["mainID"];
     if ($locType == 1) {
